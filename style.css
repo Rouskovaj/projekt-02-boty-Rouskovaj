@@ -1,20 +1,20 @@
-                                                        /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
-                                                        
-                                                        html {
-                                                            box-sizing: border-box;
-                                                        }
-                                                        
-                                                        *,
-                                                         ::after,
-                                                         ::before {
-                                                            box-sizing: inherit;
-                                                        }
-                                                        
-                                                        body {
-                                                            text-rendering: optimizeLegibility;
-                                                            /* nepřepisovat!! */
-                                                        }
-                                                        /*
+                                                /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
+                                                
+                                                html {
+                                                    box-sizing: border-box;
+                                                }
+                                                
+                                                *,
+                                                 ::after,
+                                                 ::before {
+                                                    box-sizing: inherit;
+                                                }
+                                                
+                                                body {
+                                                    text-rendering: optimizeLegibility;
+                                                    /* nepřepisovat!! */
+                                                }
+                                                /*
  BARVY
  svetle sede pozadi      #f5f5f5
  tmavsi seda             #959595
@@ -30,40 +30,111 @@
  KULATE ROHY
  border-radius: 30px;
 */
-                                                        /* ----- zde zacni psat vlastni css ----- !!!!*/
-                                                        
-                                                        body {
-                                                            font-family: 'Rubik'sans-serif;
-                                                        }
-                                                        
-                                                        .zbozi {
-                                                            background-color: #f5f5f5;
-                                                            position: absolute;
-                                                            top: 100px;
-                                                            left: 50px;
-                                                            right: 50px;
-                                                            bottom: 100px;
-                                                        }
-                                                        
-                                                        .vizual {
-                                                            width: 335px;
-                                                            height: 440px;
-                                                            background-color: #50cc49;
-                                                            background: linear-gradient(#06d7c1, #50cc49);
-                                                            border-top-left-radius: 30px;
-                                                            border-bottom-left-radius: 30px;
-                                                            position: sticky;
-                                                            left: 25%;
-                                                            top: 25%;
-                                                        }
-                                                        
-                                                        .detaily {
-                                                            width: 335px;
-                                                            height: 440px;
-                                                            background-color: white;
-                                                            border-top-right-radius: 30px;
-                                                            border-bottom-right-radius: 30px;
-                                                            position: sticky;
-                                                            left: 25%;
-                                                            top: 25%;
-                                                        }
+                                                /* ----- zde zacni psat vlastni css ----- !!!!*/
+                                                
+                                                body {
+                                                    font-family: 'Rubik', sans-serif;
+                                                    margin: 0;
+                                                }
+                                                
+                                                .zbozi {
+                                                    background-color: #f5f5f5;
+                                                    position: absolute;
+                                                    top: 25%;
+                                                    left: 25%;
+                                                    width: 100%x;
+                                                    height: 440px;
+                                                }
+                                                
+                                                .vizual {
+                                                    width: 335px;
+                                                    height: 440px;
+                                                    background-color: #50cc49;
+                                                    background: linear-gradient(#06d7c1, #50cc49);
+                                                    border-top-left-radius: 30px;
+                                                    border-bottom-left-radius: 30px;
+                                                    position: sticky;
+                                                    float: left;
+                                                }
+                                                
+                                                .detaily {
+                                                    width: 335px;
+                                                    height: 440px;
+                                                    background-color: white;
+                                                    border-top-right-radius: 30px;
+                                                    border-bottom-right-radius: 30px;
+                                                    position: sticky;
+                                                    float: right;
+                                                    padding: 30px;
+                                                }
+                                                
+                                                .logo {
+                                                    position: relative;
+                                                    padding-left: 30px;
+                                                    padding-top: 30px;
+                                                    margin: 0;
+                                                }
+                                                
+                                                .slogan {
+                                                    font-size: 16px;
+                                                    font-weight: 500;
+                                                    padding-top: 30px;
+                                                    padding-left: 30px;
+                                                    margin: 0;
+                                                    color: white;
+                                                }
+                                                
+                                                .bota {
+                                                    position: absolute;
+                                                    left: -80px;
+                                                    bottom: 15px;
+                                                }
+                                                
+                                                .cena {
+                                                    font-size: 28px;
+                                                    font-weight: 500;
+                                                }
+                                                
+                                                .zaruka {
+                                                    font-size: 12px;
+                                                    font-weight: 400;
+                                                }
+                                                
+                                                .cenovka {
+                                                    position: absolute;
+                                                    bottom: 30px;
+                                                    right: 30px;
+                                                    color: white;
+                                                }
+                                                
+                                                .nazev {
+                                                    font-size: 20px;
+                                                    font-weight: 500;
+                                                }
+                                                
+                                                .popis {
+                                                    border-bottom: #06d7c1;
+                                                    border-top: 0;
+                                                    border-left: 0;
+                                                    border-right: 0;
+                                                    border-style: solid;
+                                                    padding-bottom: 30px;
+                                                }
+                                                
+                                                .nav {
+                                                    background-color: yellow;
+                                                    list-style-type: none;
+                                                }
+                                                
+                                                .parametr {
+                                                    text-transform: uppercase;
+                                                }
+                                                
+                                                .akce {
+                                                    text-transform: uppercase;
+                                                    background-color: #f15f42;
+                                                    border-radius: 15px;
+                                                    padding: 10px;
+                                                    text-align: center;
+                                                    width: fit-content;
+                                                }
